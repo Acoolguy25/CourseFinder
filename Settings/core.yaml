@@ -1,0 +1,18 @@
+save: # download/saving settings will do nothing if both of these are disabled:
+    save_csv: yes # save as a csv
+    save_html: yes # save as a html
+download:
+    save_download: yes # save downloads as a new file
+    download_link: "https://waf.cs.illinois.edu/visualizations/Grade-Disparities-and-Accolades-by-Instructor/final.csv"
+    download_name: "GPAs %Y.%m.%d"
+    hide_unavailable_courses: true # hides courses labeled as not teaching next semester!
+electives:
+    exclude_courses: [] # add course identifiers such as "ECE 210" to remove them from the merged table
+    electives_link: "https://catalog.illinois.edu/undergraduate/engineering/computer-engineering-bs/#degreerequirementstext"
+    save_electives: yes # save electives as a new file
+    save_electives_name: "Electives %Y.%m.%d"
+merge:
+    save_all: yes
+    save_merging_tech_electives: yes
+sort: # Sorting tech electives
+    sort_columns: ["avg_gpa"] # add "num_students" or another column to sort
